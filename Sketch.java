@@ -16,7 +16,7 @@ public class Sketch extends PApplet {
    * values here i.e background, stroke, fill etc.
    */
   public void setup() {
-    background(45, 150, 207);
+    background(80, 128, 176);
   }
 
   /**
@@ -194,9 +194,9 @@ public class Sketch extends PApplet {
     int intSixCounterColumn = 0;
 
     for(int intSectionSixColumn = 30; intSectionSixColumn > intSixCounterColumn; intSectionSixColumn--){
-      for(int intSectionSixRow = 0; intSectionSixRow < intSixCounterRow; intSectionSixRow++0{
+      for(int intSectionSixRow = 0; intSectionSixRow < intSixCounterRow; intSectionSixRow++){
         intSectionSixX = 3 + 300 + intSectionSixRow * 300 / 30;
-        intSectionsixY = 3 - 10 + intSectionSixColumn * 300 / 30;
+        intSectionSixY = 3 - 10 + intSectionSixColumn * 300 / 30;
 
         fill(255);
         noStroke();
@@ -228,11 +228,21 @@ public class Sketch extends PApplet {
   
   public void draw_section8(){
 
+    int intSectionEightX = 0;
+    int intSectionEightY = 0;
+    int intEightCounterRow = 0;
+    int intEightCounterColumn = 30;
+
+    for(int intSectionEightColumn = 0; intSectionEightColumn < intEightCounterColumn; intSectionEightColumn++){
+      for(int intSectionEightRow = 30; intSectionEightRow > intEightCounterRow; intSectionEightRow--){
+      intSectionEightX = 3 - 10 + 900 + intSectionEightRow * 300 / 30;
+      intSectionEightY = 3 + intSectionEightColumn * 300 / 30;
+
+      fill(255);
+      noStroke();
+      rect(intSectionEightX, intSectionEightY, 5, 5);
+    }
+    intEightCounterRow += 1;
+    }
   }
-
-
-
-
-
-
 }
