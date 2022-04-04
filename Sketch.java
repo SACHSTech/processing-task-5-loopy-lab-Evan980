@@ -105,8 +105,8 @@ public class Sketch extends PApplet {
           fill(0);
           noStroke();
           rect(intSectionTwoX, intSectionTwoY, 5, 5);
+          }
         }
-      }
      }
   }
   
@@ -116,15 +116,38 @@ public class Sketch extends PApplet {
    */
   public void draw_section3(){
 
-  }
+    int intSectionThreeX = 0;
+    int intSectionThreeY = 0;
 
+    for(int intSectionThreeRow = 0; intSectThreeRow < 30; intSectThreeRow++){
+
+      for(int intSectThreeColumn = 0; intSectThreeColumn < 30; intSectThreeColumn++){
+
+        intSectionThree = 3 + 600 + intSectionThreeRow * 300 / 30;
+        intSectionThreeY = 3 + 300 + intSectThreeColumn * 300 / 30;
+
+        if(intSectThreeColumn % 2 == 0){
+          
+          fill(0);
+          noStroke();
+          rect(intSectThreeX, intSectThreeY, 5, 5);
+          }
+          
+        else {
+          
+          fill(255);
+          noStroke();
+          rect(intSectionThreeX, intSectionThreeY, 5, 5);
+          }
+       }
+     }
+  }
   /**
    * Use the modulus operator and just one 'if' statement to select the color.
    */
   public void draw_section4(){
 
-  }
-
+    }
   /**
    * Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead
    */
