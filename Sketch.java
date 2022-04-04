@@ -24,14 +24,6 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 	  
-	// sample code, delete this stuff
-    /*
-    stroke(128);
-    line(150, 25, 270, 350);  
-
-    stroke(255);
-    line(50, 125, 70, 50);  
-*/
     draw_section_outlines();
     draw_section1();
     draw_section2();
@@ -92,9 +84,32 @@ public class Sketch extends PApplet {
    * Don't loop from 30 to 60 to shift everything over, just add 300 to x.
    */
   public void draw_section2(){
+    int intSectionTwoX = 0;
+    int intSectionTwoY = 0;
 
+    for(int intSectionTwoRow = 0; intSectionTwoRow < 30; intSectionTwoRow++){
+     
+      for(int intSectionTwoColumn= 0; intSectionTwoColumn < 30; intSectionTwoColumn++){
+
+        intSectionTwoX = 3 + 300 + intSectionTwoRow * 300 / 30;
+        intSectionTwoY = 3 + 300 + intSectTwoColumn * 300 / 30;
+
+        if(intSectionTwoRow % 2 == 0){
+          
+          fill(255);
+          noStroke();
+          rect(intSectionTwoX, intSectionTwoY, 5, 5);
+      }
+        else {
+          
+          fill(0);
+          noStroke();
+          rect(intSectionTwoX, intSectionTwoY, 5, 5);
+        }
+      }
+     }
   }
-
+  
   /**
    * Use the modulus operator and an if/else statement to select the color.
    * Don't use multiple 'if' statements.
