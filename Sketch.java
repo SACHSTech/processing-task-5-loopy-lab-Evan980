@@ -172,12 +172,12 @@ public class Sketch extends PApplet {
     int intSectionFiveX = 0;
     int intSectionFiveY = 0;
     int intFiveCounterRow = 0;
-    int intFivecounterColumn = 0;
+    int intFiveCounterColumn = 0;
 
-    for(int intSectionFiveColumn = 30; intSectionFiveColumn > intFiveCountereColumn; intSectionFiveColumn--){
+    for(int intSectionFiveColumn = 30; intSectionFiveColumn > intFiveCounterColumn; intSectionFiveColumn--){
       for(int intSectionFiveRow = 30; intSectionFiveRow > intFiveCounterRow; intSectionFiveRow--){
         intSectionFiveX = 3 - 10 + intSectionFiveRow * 300 / 30;
-        intSectionFiveY = 3 + intSectionFiveColumn * 300 / 30
+        intSectionFiveY = 3 + intSectionFiveColumn * 300 / 30;
         fill(255);
         noStroke();
         rect(intSectionFiveX, intSectionFiveY, 5, 5);
@@ -188,6 +188,22 @@ public class Sketch extends PApplet {
 
   public void draw_section6(){
 
+    int intSectionSixX = 0;
+    int intSectionSixY = 0;
+    int intSixCounterRow = 30;
+    int intSixCounterColumn = 0;
+
+    for(int intSectionSixColumn = 30; intSectionSixColumn > intSixCounterColumn; intSectionSixColumn--){
+      for(int intSectionSixRow = 0; intSectionSixRow < intSixCounterRow; intSectionSixRow++0{
+        intSectionSixX = 3 + 300 + intSectionSixRow * 300 / 30;
+        intSectionsixY = 3 - 10 + intSectionSixColumn * 300 / 30;
+
+        fill(255);
+        noStroke();
+        rect(intSectionSixX, intSectionSixY, 5, 5);
+      }
+      intSixCounterRow -= 1;
+    }
   }
 
   public void draw_section7(){
